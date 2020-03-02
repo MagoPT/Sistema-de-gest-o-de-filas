@@ -38,9 +38,13 @@ $nome = $user['nome'];
                 <?php
                 session_start();
                 if (isset($_SESSION["user"])) {
-                    echo "<li class='nav-item' role='presentation' onclick='logout()'><a class='nav-link' ><i class='fas fa-sign-out-alt'></i><span >Logout</span></a></li>";
+                    echo "<li class='nav-item medico' role='presentation' onclick='logout()'><a class='nav-link' ><i class='fas fa-sign-out-alt'></i><span >Logout</span></a></li>";
                 }
                 ?>
+                <script type="text/javascript">
+                    document.cookie = "especializacao=<?php echo $user['especializacao'] ?>";
+                    document.cookie = "medico=<?php echo $user['nome']." ".$user['apelido'] ?>";
+                </script>
             </ul>
             <div class="text-center d-none d-md-inline">
                 <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
@@ -51,12 +55,12 @@ $nome = $user['nome'];
         </div>
     </nav>
     <div style="align-items:center; padding-left: 55px; padding-top: 25px; padding-bottom: 25px; text-align: left">
-        <div style="font-size: 50px; font-weight: bold; text-align: left">
-            <?= 'Médico: ' . $user['nome'] . ' ' . $user['apelido'] ?>
+        <div style="font-size: 50px; font-weight: bold; text-align: left" class="medico">
+           <?= 'Médico: ' . $user['nome'] . ' ' . $user['apelido'] ?>
         </div>
         <br>
         <div style="font-size: 50px; font-weight: bold; text-align: left">
-            <?= 'Especialidade: ' . $user['especializacao'] ?>
+            <?= 'Especialidade: <a id="especializacao"> ' . $user['especializacao'].'</a>' ?>
         </div>
         <hr>
         <div>
@@ -83,7 +87,10 @@ $nome = $user['nome'];
         <script>adm()</script>
         <footer style="text-align: center" class="state">
             <span style="text-align: center" class="users">?</span> online
-            <script> index()</script>
+            <script>
+                status = index_adm();
+                console.log(status);
+            </script>
         </footer>
     </div>
 

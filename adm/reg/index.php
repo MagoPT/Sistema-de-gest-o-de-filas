@@ -61,8 +61,19 @@
 					</div>
 
                     <div class="wrap-input100 validate-input" data-validate = "É necessario inserir a sua especialidade">
-						<span class="label-input100">Especialidade</span>
-						<input class="input100" type="text" name="especialidade" placeholder="Especialidade...">
+						<span class="label-input100">Especialidade</span><br>
+                        <label class="checkbox-inline">
+                            <input type="radio" value="Geral" name="especialidade">Geral
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="radio" value="Oftalmologista" name="especialidade">Oftalmologista
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="radio" value="Cardiologia" name="especialidade">Cardiologia
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="radio" value="Psicologia" name="especialidade">Psicologia
+                        </label>
 						<span class="focus-input100"></span>
 					</div>
 

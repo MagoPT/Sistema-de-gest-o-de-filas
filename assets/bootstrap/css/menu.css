@@ -11,8 +11,8 @@ body {
 
 .button, .value {
     line-height: 1;
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1rem;
+    margin: 1rem;
     border: medium solid;
     min-height: 1em;
     min-width: 1em;

@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="relogio.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="functions.js"></script>
+    <script type="text/javascript">
+        var ip = location.host;
+        //alert(ip);
+    </script>
+
 </head>
 
 <body id="page-top" onload="relogio()">
@@ -52,27 +57,70 @@
     <div class="d-flex flex-column"
          style="align-items:center; padding-left: 55px; padding-top: 25px; border-style: dashed">
         <div style="border-style: solid; font-size: xx-large">
-            Clinica Geral
+            Quadro Principal
         </div>
+
         <div class="buttons"
              style="padding-inline: 5px; padding-top: 15px;font-size: 30px; align-content: center; display: inline-block">
-            <a class="value" style="border-style: dashed"> Senhas totais: <e class="total">?</e></a>
-            <a class="value" style="border-style: solid"> Senha atual: <e class="atual">?</e></a>
+            <div style="border-style: solid; text-align:center;font-size: xx-large">
+                Geral
+            </div>
+            <a class="value" style="border-style: dashed"> Senhas totais:
+                <e class="ger_total">?</e>
+            </a>
+            <a class="value" style="border-style: solid"> Senha atual:
+                <e class="ger_atual">?</e>
+            </a>
         </div>
-        <div style="padding-inline: 5px; padding-top: 15px;font-size: 30px; align-content: center; display: inline-block">
-            <a class="value" style="border-style: solid"> Tamanho da fila atual: <e class="tamanho">?</e></a>
+
+        <div class="buttons"
+             style="padding-inline: 5px; padding-top: 15px;font-size: 30px; align-content: center; display: inline-block">
+            <div style="border-style: solid; text-align:center;font-size: xx-large">
+                Oftalmologista
+            </div>
+            <a class="value" style="border-style: dashed"> Senhas totais:
+                <e class="oft_total">?</e>
+            </a>
+            <a class="value" style="border-style: solid"> Senha atual:
+                <e class="oft_atual">?</e>
+            </a>
         </div>
+
+        <div class="buttons"
+             style="padding-inline: 5px; padding-top: 15px;font-size: 30px; align-content: center; display: inline-block">
+            <div style="border-style: solid; text-align:center;font-size: xx-large">
+                Cardiologia
+            </div>
+            <a class="value" style="border-style: dashed"> Senhas totais:
+                <e class="car_total">?</e>
+            </a>
+            <a class="value" style="border-style: solid"> Senha atual:
+                <e class="car_atual">?</e>
+            </a>
+        </div>
+
+        <div class="buttons"
+             style="padding-inline: 5px; padding-top: 15px;font-size: 30px; align-content: center; display: inline-block">
+            <div style="border-style: solid; text-align:center;font-size: xx-large">
+                Psicologia
+            </div>
+            <a class="value" style="border-style: dashed"> Senhas totais:
+                <e class="psi_total">?</e>
+            </a>
+            <a class="value" style="border-style: solid"> Senha atual:
+                <e class="psi_atual">?</e>
+            </a>
+        </div>
+
         <div class="state">
             <span class="users">?</span> online
         </div>
         <div>
-            <table style="font-size: xx-large" id="fila">
-                <tr>
-                    <th style="padding-right: 25px">Senha</th>
-                    <th sstyle="padding-right: 25px">Balcão</th>
-                </tr>
-                <script> index()</script>
+            <table class="ordem" style="font-size: xx-large; border-style: solid; text-align: center; vertical-align: center" id="fila">
+
+
             </table>
+            <script> index()</script>
         </div>
 
     </div>

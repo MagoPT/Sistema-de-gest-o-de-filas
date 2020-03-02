@@ -47,8 +47,11 @@
         <div style="font-size: xx-large">
             Clinica Geral
         </div>
-        <div class="buttons">
-            <div class="plus button">Retirar senha</div>
+        <div class="buttons" style="padding-inline: 5px; padding-top: 15px; padding-bottom:15px;font-size: 30px;position: relative; align-content: center; display: inline-block">
+            <a class="ger_plus button">Geral</a>
+            <a class="oft_plus button">Oftalmologista </a>
+            <a class="car_plus button">Cardiologia</a>
+            <a class="psi_plus button">Psicologia</a>
         </div>
         <div class="state">
             <span class="users">?</span> online
